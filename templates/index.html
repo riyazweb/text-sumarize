@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Pro Max Summary Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes backgroundBlur {
+            0% { filter: blur(0px); }
+            50% { filter: blur(15px); }
+            100% { filter: blur(0px); }
+        }
+
+        .background-blur {
+            background: rgba(0, 0, 0, 0.9); /* Pure black with slight transparency */
+            animation: backgroundBlur 6s ease-in-out infinite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-black text-white font-sans overflow-hidden">
+
+    <!-- Animated Background -->
+    <div class="background-blur"></div>
+
+    <div class="container mx-auto p-6 relative z-10">
+        <!-- Heading Section -->
+        <h1 class="text-6xl font-extrabold text-center text-white mb-10 tracking-wide leading-tight">
+            Ultra Pro Max Summary Generator
+        </h1>
+
+        <!-- Form Section -->
+        <form action="/summarize" method="POST" class="space-y-8 bg-opacity-70 bg-black p-8 rounded-2xl shadow-2xl border border-gray-700">
+            <textarea name="text" rows="8" class="w-full p-5 bg-gray-800 border border-gray-700 rounded-xl text-lg text-white placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-500 transition duration-300 ease-in-out" placeholder="Paste the text here..." required></textarea>
+            <button type="submit" class="w-full bg-white border-2 border-black text-black py-4 rounded-xl font-semibold text-xl hover:bg-gray-800 transition duration-200 ease-in-out focus:ring-4 focus:ring-blue-500 focus:outline-none">
+                Generate Summary
+            </button>
+        </form>
+
+        <!-- Summary Section -->
+        {% if summary %}
+            <div class="mt-10 bg-opacity-80 bg-black p-8 rounded-2xl shadow-2xl border border-gray-700">
+                <h2 class="text-3xl font-semibold text-blue-400 mb-6">Generated Summary</h2>
+                <p class="text-lg text-white p-5 bg-gray-700 rounded-lg">{{ summary }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
