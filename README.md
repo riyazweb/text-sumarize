@@ -2,19 +2,58 @@
 
 
 # Text-Summarization
-<img src="https://github.com/favicon.ico" width="48">
+# Text Summarizer 📚✂️
 
-**Automatic summarization** is the process of shortening a text document with software, in order to create a summary with the major points of the original document. Technologies that can make a coherent summary take into account variables such as length, writing style and syntax.
+Welcome to the **Text Summarizer** repository! This project is designed to provide efficient and accurate text summarization using advanced algorithms and machine learning techniques.
 
-Automatic data summarization is part of the real machine learning and data mining. The main idea of summarization is to find a subset of data which contains the "information" of the entire set. Such techniques are widely used in industry today. Search engines are an example; others include summarization of documents, image collections and videos. Document summarization tries to create a representative summary or abstract of the entire document, by finding the most informative sentences, while in image summarization the system finds the most representative and important (i.e. salient) images. For surveillance videos, one might want to extract the important events from the uneventful context.
+## 📊 Language Composition
 
-There are two general approaches to automatic summarization:  Extraction and Abstraction. 
-1.  *Extractive Summarization* : These methods rely on extracting several parts, such as phrases and sentences, from a piece of text and stack them together to create a summary. Therefore, identifying the right sentences for summarization is of utmost importance in an extractive method.
-2.  *Abstractive Summarization* : These methods use advanced NLP techniques to generate an entirely new summary. Some parts of this summary may not even appear in the original text. Such a summary might include verbal innovations. 
-Research to date has focused primarily on extractive methods, which are appropriate for image collection summarization and video summarization.
+- Jupyter Notebook: 92.7%
+- HTML: 7.3%
 
-In this Jupyter notebook, TextRank algorithm for extractive text summarization is implemented using Google's PageRank search algorithm to generate corelations among sentences.
+## 🚀 Features
 
+- Summarize large texts into concise summaries
+- Easy-to-use interface with Jupyter Notebooks
+- Interactive visualizations for better understanding
+- Supports multiple languages
+
+## 🛠️ Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/riyazweb/text-sumarize.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd text-sumarize
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## 📖 Usage
+
+1. Open the Jupyter Notebook:
+    ```bash
+    jupyter notebook
+    ```
+2. Navigate to the desired notebook and run the cells to see the summarization in action.
+
+## 👥 Contributing
+
+We welcome contributions! Please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📬 Contact
+
+If you have any questions or feedback, please feel free to reach out to us.
+
+Happy summarizing! 🎉
 <img src="https://github.com/m0-k1/Text-Summarization/blob/master/images/nlp.png">
 
 ## Libraries Used
