@@ -1,5 +1,4 @@
 # @title website run
-!pip install pyngrok
 
 from flask import Flask, request, render_template
 from pyngrok import ngrok
@@ -83,7 +82,7 @@ def summarize():
     if request.method == 'POST':
         text = request.form['text']
         summary = summary_text_with_tfidf(text)
-        return render_template('/content/text-sumarize/templates/index.html', summary=summary, original_text=text)
+        return render_template('index.html', summary=summary, original_text=text)
 
 if __name__ == '__main__':
     try:
