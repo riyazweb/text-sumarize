@@ -1,6 +1,7 @@
 # Text Summarizer 📚✂️
 
 Welcome to the **Text Summarizer** repository! This project is designed to provide efficient and accurate text summarization using advanced algorithms and machine learning techniques.
+![Uploading Screenshot 2025-01-15 183107.png…]()
 
 ## 📊 Language Composition
 
